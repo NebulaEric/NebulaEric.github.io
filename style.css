@@ -1,0 +1,318 @@
+/* Body styles */
+body {
+    font-family: sans-serif;
+    font-size: 13px;
+    background-color: #855353;
+    color: #ffffff;
+    
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #18191b;
+    padding: 10px 0;
+    position: fixed; /* Sticky header */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    transition: top 0.3s ease;
+}
+
+/* Footer styles */
+footer {
+    background: #18191b;
+    padding: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+/* Main Body of Index.html */
+main {
+    flex: 1, 1, 0; /* This makes the main content take up remaining space */
+    padding-top: 5rem; /* Adjust to add space for sticky header */
+    
+}
+
+section{
+    padding: 30px 20px;
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+.container{
+    background-color: #45a049;
+    display: flex;
+    flex-shrink: 1;
+}
+
+/* Navigation Bar ----------------------------------------------------------------------------------*/
+nav {
+    background-color: #ffffff;
+    gap: 200px;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
+
+nav a.logo{
+    font-family: 'Lato';
+    text-decoration: none;
+    color: white;
+    background-color: #192d53;
+    /* padding: 10px 20px;
+    margin-left: 15px;
+    gap: 100px;
+    text-align: left;*/
+    margin-right: auto;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    transition: background-color 0.3s ease;
+}
+
+nav a.logo img {
+    width: 30px;
+    height: 30px;
+    /*object-fit: contain;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -4px; */
+}
+
+nav a.button{
+    font-family: 'Poppins'; /*PT Sans , Roboto , Lato*/
+    text-decoration: none;
+    color: white;
+    background-color: #18191b;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+nav a.button:hover{
+    background-color: #555;
+}
+nav a.button.active{
+    background-color: #77005d;
+}
+
+/* End of Navigation Bar ------------------------------------------------------------------------*/
+
+
+/* Intro Section ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#hello {
+    background-color: #3a3a3a;
+}
+
+.intro {
+    margin: 0;
+    padding: 0 25% 25px 25%;
+    text-align: left;
+}
+
+.intro h1 {
+    font-size: 15px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.intro h2 {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.intro h3 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    margin: 0;
+    max-width: 700px;
+    padding-bottom: 25px;
+    line-height: 25px;
+    text-align: left;
+}
+
+.buttonGroup{
+    position: relative;
+    background-color: #3a3a3a;
+    font-size: 13px;
+    font-family: sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.resumeButton{
+    display: flex;
+    border-radius: 12px;
+    padding: 11px 15px;
+    border: 2px solid white;
+    text-decoration: none; /* removes underline */
+    color: white; /* sets text color */
+}
+
+.circleButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.circleButton img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* End of Intro Section +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* About Section ==============================================================================*/
+
+#about {
+    background-color: #555;
+}
+.aboutHeader h1{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.aboutClass{
+    position: relative;
+    font-size: 13px;
+    padding: 0 25% 25px 25%;
+    font-family: sans-serif;
+    display: inline-flex;
+    align-items: flex-start;
+}
+.aboutImg img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+.aboutText p{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+}
+.aboutText ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40%;
+    list-style-type: none;
+    padding: 2%;
+}
+.aboutText ul li::before {
+    content: "▹";
+    color: var(--primary-color);
+    left: 0px;
+  }
+
+/* End About Section ============================================================================ */
+
+/* Education Section Starts Here _________________________________________________________________ */
+
+#education{
+    background-color: #0841b3;
+}
+
+
+.container.educationCards{
+    flex-direction: column;
+    
+}
+#education h1{
+    text-align: center;
+}
+#education h2{
+    text-align: left;
+}
+#education h3{
+    text-align: left;
+}
+.educationCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 2rem;
+    
+}
+
+.card{
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 100rem;
+    height: 9rem;
+    
+
+}
+
+.cardBody{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.cardBody p{
+    margin: 0;
+}
+.cardBody h2{
+    margin: 0;
+}
+/* Education Section Ends Here ___________________________________________________________________ */
+
+
+/*  Projects Starts Here [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[*/
+
+#project {
+    background-color: #5c2b2b;
+}
+
+/*  Projects End Here ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]*/
+
+
+/* Contact Starts Here ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+
+#contact {
+    background-color: #412828;
+}
+
+/* Contact Ends Here ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Test button currently being used for the "Click Me!" button 
+button {
+    position: relative;
+    background-color: #115813;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: sans-serif;
+    cursor: pointer;
+}*/
