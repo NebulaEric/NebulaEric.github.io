@@ -18,14 +18,14 @@ window.addEventListener("scroll", function(){
 function toggleMenu() {
     document.getElementById("navLinks").classList.toggle("active");
 }
-  document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".navLinks");
+//   document.addEventListener("DOMContentLoaded", () => {
+//     const hamburger = document.querySelector(".hamburger");
+//     const navLinks = document.querySelector(".navLinks");
 
-    hamburger.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  });
+//     hamburger.addEventListener("click", () => {
+//       navLinks.classList.toggle("active");
+//     });
+//   });
 
 
 // Find the button and the message paragraph
