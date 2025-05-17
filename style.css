@@ -241,7 +241,7 @@ nav a.button.active{
 /* Education Section Starts Here _________________________________________________________________ */
 
 #education{
-    background-color: #a3bae9;
+    background-color: #3a3a3a;
 }
 
 .container.educationCards{
@@ -255,6 +255,10 @@ nav a.button.active{
 }
 #education h3{
     text-align: left;
+}
+#education h3:hover{
+    text-decoration: underline;
+    transform: scale(1.01);
 }
 #education a{
     text-decoration: none;
@@ -293,13 +297,16 @@ nav a.button.active{
 .cardBody h2{
     margin: 0;
 }
+.cardHeader{
+    display: flex;
+}
 /* Education Section Ends Here ___________________________________________________________________ */
 
 
 /*  Projects Starts Here [[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[*/
 
 #project {
-    background-color: #5c2b2b;
+    background-color: #3a3a3a;
 }
 #project a{
     text-decoration: none;
@@ -326,16 +333,25 @@ nav a.button.active{
 
 .Pcard{
     border-radius: 1em;
-    display: inline-flex;
+    display: flex;
     border: .2em solid black;
     background-color: #77005d;
     padding: 2rem;
     width: 20rem;
     height: 28rem;
+    box-sizing: border-box;
+}
+.Pcard:hover {
+    transform: scale(1.02);
 }
 
 .PcardHead{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.PcardDate{
+    padding:0 2rem 0 0;
 }
 .PcardBody{
     display: flex;
@@ -350,7 +366,7 @@ nav a.button.active{
 /* Contact Starts Here ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
 
 #contact {
-    background-color: #412828;
+    background-color: #3a3a3a;
 }
 #contact a{
     text-decoration: none;
