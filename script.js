@@ -15,6 +15,12 @@ window.addEventListener("scroll", function(){
 });
 
 
+function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+}
+
+
+
 // Find the button and the message paragraph
 //const button = document.getElementById("myButton");
 //const message = document.getElementById("message");
