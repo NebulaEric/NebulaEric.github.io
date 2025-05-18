@@ -15,18 +15,31 @@ window.addEventListener("scroll", function(){
 });
 
 
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("active");
-}
-//   document.addEventListener("DOMContentLoaded", () => {
-//     const hamburger = document.querySelector(".hamburger");
-//     const navLinks = document.querySelector(".navLinks");
+// function toggleMenu() {
+//     document.getElementById("navLinks").classList.toggle("active");
+// }
 
-//     hamburger.addEventListener("click", () => {
-//       navLinks.classList.toggle("active");
-//     });
-//   });
+// function toggleMenuOff() {
+//     document.getElementById("navLinks").classList.toggle("deactive");
+// }
 
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".navLinks");
+    const links = document.querySelectorAll(".navLinks a");
+
+    // Toggle nav menu on hamburger click
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    // Close nav menu when any nav link is clicked
+    links.forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  });
 
 // Find the button and the message paragraph
 //const button = document.getElementById("myButton");

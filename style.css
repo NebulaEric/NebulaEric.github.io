@@ -61,7 +61,7 @@ nav {
 .container.nav{
     padding: 0 2rem;
 }
-.nav-links {
+.navLinks {
   display: flex;
   gap: 1.5rem;
 }
@@ -443,7 +443,7 @@ html {
         gap: 1rem;
     }
 
-    .nav-links {
+    .navLinks {
     display: none; /* Hide normal nav links */
     flex-direction: column;
     background-color: #18191b;
@@ -454,7 +454,7 @@ html {
     padding: 1rem;
     }
 
-    .nav-links.active {
+    .navLinks.active {
         display: flex; /* Show when toggled */
     }
 
