@@ -116,7 +116,7 @@ nav a.button.active{
     background-color: #3a3a3a;
 }
 
-.intro {
+.container.intro {
     margin: 0;
     padding: 0 25% 75rem 25%;
     text-align: left;
@@ -165,7 +165,6 @@ nav a.button.active{
 }
 .introImg{
     display: flex;
-    
     align-items: flex-end;
 }
 .roundedImg{
@@ -472,8 +471,16 @@ html {
         margin-right: 0;
     }
 
+    .container.intro{
+        flex-direction: column;
+        padding: 0 0 75rem 0;
+    }
+    .introText{
+        padding-bottom: 3rem;
+    }
     .aboutText ul {
-        grid-template-columns: 1fr;
+        
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .card,
