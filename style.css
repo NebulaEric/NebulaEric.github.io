@@ -309,8 +309,10 @@ nav a.button.active{
 .cardBody h2{
     margin: 0;
 }
-.cardHeader{
+.EcardHead{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* Education Section Ends Here ___________________________________________________________________ */
 
@@ -326,7 +328,7 @@ nav a.button.active{
 }
 #project h2{
     text-align: left;
-    
+    margin: 0;
 }
 .container.projectCards{
     flex-direction: column;
@@ -346,22 +348,24 @@ nav a.button.active{
 .Pcard{
     border-radius: 1em;
     display: flex;
-    border: .2em solid black;
-    background-color: #77005d;
-    padding: 2rem;
+    border: .2em solid white;
+    background-color: #18191b;
+    
     width: 20rem;
     height: 28rem;
     box-sizing: border-box;
+    flex-direction: column;
 }
 .Pcard:hover {
     transform: scale(1.02);
 }
 
-.PcardHead{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.PcardImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
 }
+
 .PcardDate{
     padding:0 2rem 0 0;
 }
@@ -370,8 +374,24 @@ nav a.button.active{
     height: 100%;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 1rem
 }
-
+.PcardFooter{
+    display: flex;
+    flex-direction: row;
+    padding-left: 1rem;
+    font-size: .75rem;
+    border-top: .2em solid white;
+}
+.FooterTag{
+    padding: 0 .2rem;
+    border-radius: 1em;
+    border: .2em solid white;
+    margin: .25rem .5rem;
+}
+.FooterTag p{
+    margin: 5px 0;
+}
 /*  Projects End Here ]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]*/
 
 
