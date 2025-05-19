@@ -42,7 +42,7 @@ main {
 
 section{
     padding: 1.9rem 1.25rem;
-    border-bottom: 1px solid #ffffff
+    /*border-bottom: 1px solid #ffffff */
 }
 
 .container{
@@ -396,7 +396,39 @@ nav a.button.active{
     align-items: center;
     height: 4rem;
 }
+.email,
+.phoneNumber{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
 
+}
+
+.copy-icon{
+    font-size: 12px;
+    color: white;
+}
+.copy{
+    display: flex;
+    background-color: #18191b;  
+    color: #ffffff;
+    border-radius: 12px;
+    gap: 2px;
+    border: 2px solid #18191b;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy:active{
+    background-color: rgb(153, 235, 235);
+}
+.copy:disabled{
+    background-color: #18191b;
+    color: #555;
+    cursor: not-allowed;
+}
 /* Contact Ends Here ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
 
 /* Smooth Scrolling */
@@ -511,3 +543,25 @@ html {
         font-size: 1.5rem;
     }
 }
+
+
+/* Webite Project Site Styling Starts [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] */
+
+#website{
+    background-color: #18191b;
+    flex: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#website h1{
+    font-size: 4rem;
+}
+.container.webite{
+    flex-direction: column;
+}
+.websiteText{
+    max-width: 500px;
+}
+
