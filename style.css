@@ -584,4 +584,23 @@ html {
 .websiteText{
     max-width: 500px;
 }
-
+#fastplan{
+    background-color: #18191b;
+    flex: 1 1 0;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#fastplan h1{
+    font-size: 4rem;
+}
+.container.fastplan{
+    flex-direction: column;
+}
+.FPText{
+    max-width: 700px;
+}
+.FPText img{
+    max-width: 700px;
+}
