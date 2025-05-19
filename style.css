@@ -595,12 +595,18 @@ html {
 #fastplan h1{
     font-size: 4rem;
 }
+#fastplan h2{
+    font-size: 2rem;
+}
 .container.fastplan{
     flex-direction: column;
 }
 .FPText{
     max-width: 700px;
+    font-size: 1.25rem;
+    width: 100%;
 }
 .FPText img{
     max-width: 700px;
+    width: 100%;
 }
