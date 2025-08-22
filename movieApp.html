@@ -27,21 +27,59 @@
         </nav>
     </header>
     <main>
-        <section id="fastplan">
-            <div class="container fastplan">
-                <div class="FPText">
-                    <h1>Movie Vault</h1>
-                    <h2>Problem?</h2>
-                    <p>I have an issue with remembering what movies I want to watch, movies I have already watched, and what I thought about them.</p>
-                    <h2>Solution?</h2>
-                    <p>Create a desktop app which I can add movies, give them tags including, watched/unwatched, movie category, rating, and any other tag I might want to add.</p>
-                    <h2>Plan</h2>
-                    <p>I plan to use React and Electron for my UI, Node.js for backend, and SQLite for my database. I plan to add features such as syncing with a phone app, and streaming to other devices.</p>
-                    
-                    
-                </div>
-            </div> 
-        </section>
+      <section id="movievault">
+          
+      <div class="container project-detail">
+
+          <!-- Banner Screenshot -->
+          <div class="project-banner">
+            <img src="..\NebulaEric.github.io\MovieVaultProgressPhotos\SecondCheckPoint.PNG" alt="MovieVault screenshot" class="project-banner-img">
+          </div>
+
+          <!-- Tech Tags -->
+          <div class="tag-row">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">Electron</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">Node.js</span>
+          </div>
+
+          <!-- Project Title + Subtitle -->
+          <h1 class="project-title">🎬 MovieVault</h1>
+          <p class="project-subtitle">A cross-platform desktop app for organizing and tracking movies.</p>
+
+          <!-- Main Content -->
+          <div class="project-content">
+            <div class="project-description">
+              <h2>Problem</h2>
+              <p>I often forgot which movies I wanted to watch, which ones I had already watched, and what I thought about them afterward.</p>
+
+              <h2>Solution</h2>
+              <p>I built <strong>MovieVault</strong>, a desktop application where users can manage movies with custom tags, 
+              track reviews, and fetch movie data from <em>TMDB</em>.</p>
+
+              <h2>Key Features</h2>
+              <ul class="feature-list">
+                <li>Add & organize movies with custom tags</li>
+                <li>Track ratings, reviews, and watch history</li>
+                <li>Sync posters and metadata automatically</li>
+                <li>Review system with profile support</li>
+                <li>Modern UI with gradient overlays for readability</li>
+              </ul>
+
+              <h2>Challenges & Learnings</h2>
+              <p>
+                - Integrated SQLite with Express efficiently using <code>better-sqlite3</code><br>
+                - Solved issues with missing poster images and conditional API calls<br>
+                - Implemented regex filtering to clean messy TMDB cast data<br>
+                - Learned to structure an Electron + React app with a maintainable backend/frontend split
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer>
         <p>&copy; 2025 Eric Ward Projects</p>
